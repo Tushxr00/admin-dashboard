@@ -15,6 +15,7 @@ export const ContextProvider = (props) => {
     <StateContext.Provider
       value={{
         activeMenu,
+        setActiveMenu,
       }}
     >
       {props.children}
