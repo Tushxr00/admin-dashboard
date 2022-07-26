@@ -29,7 +29,7 @@ const SideBar = () => {
           <div className="flex justify-between items-center">
             <Link
               to="/"
-              onClick={() => handleCloseSidebar}
+              onClick={handleCloseSidebar}
               className="item-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tighter dark:text-white text-slate-900"
             >
               <SiShopware /> <span> shoppy</span>
@@ -54,7 +54,7 @@ const SideBar = () => {
                   <NavLink
                     to={`/${link.name}`}
                     key={link.name}
-                    onClick={() => handleCloseSidebar}
+                    onClick={ handleCloseSidebar}
                     className={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
