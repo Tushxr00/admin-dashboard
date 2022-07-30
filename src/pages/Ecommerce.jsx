@@ -44,16 +44,12 @@ const Ecommerce = () => {
                 {item.icon}
               </button>
               <p className="mt-3">
-                <span className="text-lg font-semibold">
-                  {item.amount}
-                </span>
+                <span className="text-lg font-semibold">{item.amount}</span>
                 <span className={`text-sm text-${item.pcColor} ml-2`}>
                   {item.percentage}
                 </span>
               </p>
-              <p className="text-sm text-gray-400 mt-1">
-                {item.title}
-              </p>
+              <p className="text-sm text-gray-400 mt-1">{item.title}</p>
             </div>
           ))}
         </div>
@@ -67,17 +63,13 @@ const Ecommerce = () => {
                 <span>
                   <GoPrimitiveDot />
                 </span>
-                <span>
-                  Expenses
-                </span>
+                <span>Expenses</span>
               </p>
               <p className="flex items-center gap-2 text-green-600 hover:drop-shadow-xl">
                 <span>
                   <GoPrimitiveDot />
                 </span>
-                <span>
-                  Budget
-                </span>
+                <span>Budget</span>
               </p>
             </div>
           </div>
@@ -85,9 +77,7 @@ const Ecommerce = () => {
             <div className="border-r-1 border-color m-4 pr-10">
               <div>
                 <p>
-                  <span className="text-3xl font-semibold">
-                    $87,902
-                  </span>
+                  <span className="text-3xl font-semibold">$87,902</span>
                   <span className="p-1.5 hover:drop-shadow-xl cursore-pointer rounded-full text-white bg-green-400 ml-3 text-xs">
                     23%
                   </span>
@@ -96,9 +86,7 @@ const Ecommerce = () => {
               </div>
               <div className="mt-8">
                 <p>
-                  <span className="text-3xl font-semibold">
-                    $36,902
-                  </span>
+                  <span className="text-3xl font-semibold">$36,902</span>
                 </p>
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>

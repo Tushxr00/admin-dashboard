@@ -9,19 +9,19 @@ import avatar from "../data/avatar.jpg";
 import { Cart, Chat, Notification, UserProfile } from ".";
 import { useStateContext } from "../contexts/ContextProvider";
 
-const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
-  <TooltipComponent content={title} position="BottomCenter">
+const NavButton = (props) => (
+  <TooltipComponent content={props.title} position="BottomCenter">
     <button
       type="button"
-      onClick={customFunc}
-      style={{ color }}
+      onClick={props.customFunc}
+      style={{ color: props.color }}
       className="relative text-xl rounded-full p-3 hover:bg-light-grey"
     >
       <span
-        style={{ background: dotColor }}
+        style={{ background: props.dotColor }}
         className="absolute  inline-flex rounded-full h-2 w-2 right-2 top-2"
       />
-        {icon}
+      {props.icon}
     </button>
   </TooltipComponent>
 );
