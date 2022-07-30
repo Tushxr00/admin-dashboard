@@ -51,7 +51,7 @@ const Ecommerce = () => {
               </p>
               <p className="text-sm text-gray-400 mt-1">{item.title}</p>
             </div>
-          ))} 
+          ))}
         </div>
       </div>
       <div className="flex gap-10 flex-wrap justify-center">
