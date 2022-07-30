@@ -19,8 +19,6 @@ import {
 const Stacked = (props) => {
   return (
     <ChartComponent
-      width={props.width}
-      height={props.height}
       id="charts"
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}
@@ -28,8 +26,9 @@ const Stacked = (props) => {
       tooltip={{ enabled: true }}
       legendSettings={{ background: "white" }}
     >
-      <Inject services={[Legend, Category, StackingColumnSeries, Tooltip]} />
+      <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {stackedCustomSeries.map((item, index) => (
           <SeriesDirective key={index} {...item} />
         ))}
