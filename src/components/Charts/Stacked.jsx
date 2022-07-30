@@ -19,12 +19,14 @@ import {
 const Stacked = (props) => {
   return (
     <ChartComponent
+      width={props.width}
+      height={props.height}
       id="charts"
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
-      tooltip={{ enabled: true }}
-      legendSettings={{ background: "white" }}
+      tooltip={{ enable: true }}
+      LegendSettings={{ background: "white" }}
     >
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>
