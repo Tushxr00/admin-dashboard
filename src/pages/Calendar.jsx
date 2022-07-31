@@ -19,7 +19,14 @@ import { Header } from "../components";
 
 const Calendar = () => {
   return (
-    <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">Calendar</div>
+    <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
+      <Header category="App" title="Calendar" />
+      <ScheduleComponent>
+        <Inject
+          services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}
+        />
+      </ScheduleComponent>
+    </div>
   );
 };
 
