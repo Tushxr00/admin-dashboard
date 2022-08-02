@@ -40,7 +40,7 @@ const App = () => {
                 className="text-3xl p-3
               hover:drop-shadow-xl hover:bg-light-gray text-white"
                 style={{ backgroundColor: "blue", borderRadius: "50%" }}
-                onClick={()=>setThemeSettings(true)}
+                onClick={()=> setThemeSettings(true)}
              >
                 <FiSettings />
               </button>
