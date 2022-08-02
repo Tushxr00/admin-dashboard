@@ -22,9 +22,9 @@ const setMode = (e)=>{
   localStorage.setItem('themeMode',e.target.value)
 }
 
-const setColor = (e)=>{
-  setCurrentColor(e.target.value)
-  localStorage.setItem('themeColor',e.target.value)
+const setColor = (color)=>{
+  setCurrentColor(color)
+  localStorage.setItem('themeColor',color)
 }
   const handleClick = (clicked) => {
     setIsClicked({ ...initialState, [clicked]: true });
