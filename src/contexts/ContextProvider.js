@@ -42,8 +42,8 @@ const setColor = (e)=>{
         setScreenSize,
         currentColor,
         currentMode,
-        setCurrentColor,
-        setCurrentMode,
+        setMode,
+        setColor,
         themeSettings, 
         setThemeSettings
       }}
