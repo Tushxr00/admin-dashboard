@@ -33,6 +33,7 @@ const ColorPicker = () => {
               mode="Picker"
               modeSwitcher={false}
               inline
+              showButtons={false}
               change={change}
             />
           </div>
