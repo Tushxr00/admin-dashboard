@@ -11,7 +11,7 @@ import {
 
 import { areaCustomSeries , AreaPrimaryXAxis ,AreaPrimaryYAxis} from "../../data/dummy"
 import { useStateContext } from "../../contexts/ContextProvider"
-import { Header, LineChart } from "../../components";
+import { Header } from "../../components";
 
 const Area = () => {
 
