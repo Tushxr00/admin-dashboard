@@ -28,10 +28,11 @@ const Pyramid = () => {
           background={currentMode === "Dark"? "#33373E": "#fff" }
       >
         <Inject services={[AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationLegend, AccumulationSelection]} />
-        <AccumulationSeriesCollectionDirective></AccumulationSeriesCollectionDirective>
+        <AccumulationSeriesCollectionDirective>
         <AccumulationSeriesDirective
           dataSource={PyramidData}
           name="Food"
+          xName="x"
           xName="x"
           yName="y"
           type="Pyramid"
@@ -54,3 +55,4 @@ const Pyramid = () => {
   )
 }
 
+export default Pyramid;
