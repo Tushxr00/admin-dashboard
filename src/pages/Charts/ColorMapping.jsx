@@ -34,18 +34,19 @@ const ColorMapping = () => {
     background={currentMode === "Dark"? "#33373E": "#fff" }
     >
       <Inject services={[ColumnSeries, Tooltip, Category, Legend]} />
-      <SeriesCollectionDirective
-                 dataSource={colorMappingData[0]}
-                 name="USA"
-                 xName="x"
-                 yName="y"
-                 type="Column"
-                 cornerRadius={{
-                   topLeft: 10,
-                   topRight: 10,
-                 }}
-      >
-      </SeriesCollectionDirective>
+      <SeriesCollectionDirective>
+            <SeriesDirective
+              dataSource={colorMappingData[0]}
+              name="USA"
+              xName="x"
+              yName="y"
+              type="Column"
+              cornerRadius={{
+                topLeft: 10,
+                topRight: 10,
+              }}
+            />
+          </SeriesCollectionDirective>
       <RangeColorSettingsDirective>
             {rangeColorMapping.map((item, index) => <RangeColorSettingDirective key={index} {...item} />)}
           </RangeColorSettingsDirective>
